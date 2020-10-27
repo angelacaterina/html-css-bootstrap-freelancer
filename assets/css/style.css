@@ -1,0 +1,46 @@
+/* body [class*="col-"] {
+  height: 200px;
+  background-color: pink;
+  border: 1px solid red;
+} */
+/* utility */
+
+/* nav bar */
+.navbar{
+  background-color: #2C3E50;
+  color: white;
+}
+.header_menu a{
+  color: white;
+
+}
+
+.jumbotron, #about, .btn{
+  background: #1ABC9C;
+}
+
+/* portfolio */
+#portfolio{
+  padding: 30px 0 80px;
+}
+#portfolio .card{
+  height: 200px;
+  background: black;
+}
+
+#portfolio .row:nth-child(2){
+  padding-top: 3rem;
+}
+
+/*  about */
+#about{
+  padding: 60px 0;
+}
+#about p{
+  padding: 30px 0;
+}
+
+/* contact */
+#contact{
+  padding: 30px 0 80px;
+}
