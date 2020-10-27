@@ -23,9 +23,9 @@
   padding: 30px 0 80px;
 }
 #portfolio .card{
-  width: 300px;
   height: 200px;
   background: black;
+  margin: 1rem;
 }
 #portfolio .row:nth-child(2){
   padding-top: 3rem;
@@ -68,7 +68,7 @@
 }
 
 /* extra small phone */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #portfolio .card{
     margin: 1rem auto;
   }
@@ -81,7 +81,7 @@
 }
 
 /* small tablet */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   #portfolio .card{
     margin: 1rem auto;
   }
