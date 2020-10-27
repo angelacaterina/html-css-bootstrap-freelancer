@@ -15,7 +15,7 @@
 
 }
 
-.jumbotron, #about, .btn{
+.jumbotron, #about {
   background: #1ABC9C;
 }
 
@@ -43,4 +43,27 @@
 /* contact */
 #contact{
   padding: 30px 0 80px;
+}
+
+.btn{
+  background: #1ABC9C;
+  border: 1px solid white;
+  color: white;
+}
+
+/* footer */
+#info{
+  background: #3A546D;
+  color:white;
+  padding: 40px 280px;
+}
+
+#info a{
+  color: #1ABC9C;
+}
+
+#copyright{
+  padding: 20px 0;
+  background: #2C3E50;
+  color: white;
 }
