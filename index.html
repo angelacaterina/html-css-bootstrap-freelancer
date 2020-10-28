@@ -11,38 +11,41 @@
   </head>
   <body>
     <header id="site_header">
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top bg_nav_copyright p_20">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-sm-4 col-xs-6">
-              <div class="header_logo text-uppercase">
-                Start Boostrap
-              </div>
-              <!-- /.header_logo -->
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-8 col-sm-8 col-xs-6">
-              <div class="header_menu text-right text-uppercase">
-                <ul class="list-inline">
-                  <li><a href="">portfolio</a></li>
-                  <li><a href="">about</a></li>
-                  <li><a href="">contact</a></li>
-                </ul>
-              </div>
-              <!-- /.header_menu -->
-            </div>
-            <!-- /.col-lg-8 -->
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand text-uppercase" href="#">start bootstrap</a>
           </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right text-right text-uppercase">
+              <li><a href="">portfolio</a></li>
+              <li><a href="">about</a></li>
+              <li><a href="">contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
       </nav>
-      <!-- /nav -->
-      <div class="jumbotron">
-        <div class="container text-center text-uppercase">
-          <img src="" alt="">
-          <h1>Start Boostrap</h1>
-          <p>Graphic artist - web designer - illustrator</p>
+
+      <div class="jumbotron bg_jumbotron_about py_80_60">
+        <div class="container text-center">
+          <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="">
+          <h1 class="text-uppercase p_20">Start Boostrap</h1>
+          <div>
+            <span class="outer-line"></span>
+            <span aria-hidden="true">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="outer-line"></span>
+          </div>
+          <p class="text-uppercase p_20">Graphic artist - web designer - illustrator</p>
         </div>
       </div>
       <!-- /.jumbotron -->
@@ -51,39 +54,93 @@
     <main id="main_content">
       <section id="portfolio">
         <h2 class="text-center text-uppercase">Portfolio</h2>
-        <div class="container">
+        <div class="text-center py_15">
+          <span class="outer-line"></span>
+          <span aria-hidden="true">
+            <i class="fas fa-star"></i>
+          </span>
+          <span class="outer-line"></span>
+        </div>
+        <div class="container container_xs container_md">
           <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-              <div class="card">
-                <img src="" alt="" class="img-rounded">
+            <div class="col-lg-4 col-sm-6 col-xs-12 py_15">
+              <div class="items">
+                <div class="overlay">
+                  <div class="image-plus">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </div>
+                <!-- /.overlay -->
+                <img src="assets/img/cabin.png" alt="" class="img-rounded img-responsive">
               </div>
+              <!-- /.items -->
             </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-              <div class="card">
-                <img src="" alt="" class="img-rounded">
+            <!-- /.col-lg-4 .col-sm-6 .col-xs-12 -->
+            <div class="col-lg-4 col-sm-6 col-xs-12 py_15">
+              <div class="items">
+                <div class="overlay">
+                  <div class="image-plus">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </div>
+                <!-- /.overlay -->
+                <img src="assets/img/cake.png" alt="" class="img-rounded img-responsive">
               </div>
+              <!-- /.items -->
             </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-              <div class="card">
-                <img src="" alt="" class="img-rounded">
+            <!-- /.col-lg-4 .col-sm-6 .col-xs-12 -->
+            <div class="col-lg-4 col-sm-6 col-xs-12 py_15">
+              <div class="items">
+                <div class="overlay">
+                  <div class="image-plus">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </div>
+                <!-- /.overlay -->
+                <img src="assets/img/circus.png" alt="" class="img-rounded img-responsive">
               </div>
+              <!-- /.items -->
             </div>
-
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-              <div class="card">
-                <img src="" alt="" class="img-rounded img-responsive">
+            <!-- /.col-lg-4 .col-sm-6 .col-xs-12 -->
+            <div class="col-lg-4 col-sm-6 col-xs-12 py_15">
+              <div class="items">
+                <div class="overlay">
+                  <div class="image-plus">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </div>
+                <!-- /.overlay -->
+                <img src="assets/img/game.png" alt="" class="img-rounded img-responsive">
               </div>
+              <!-- /.items -->
             </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-              <div class="card">
-                <img src="" alt="" class="img-rounded img-responsive">
+            <!-- /.col-lg-4 .col-sm-6 .col-xs-12 -->
+            <div class="col-lg-4 col-sm-6 col-xs-12 py_15">
+              <div class="items">
+                <div class="overlay">
+                  <div class="image-plus">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </div>
+                <!-- /.overlay -->
+              <img src="assets/img/safe.png" alt="" class="img-rounded img-responsive">
               </div>
+              <!-- /.items -->
             </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-              <div class="card">
-                <img src="" alt="" class="img-rounded img-responsive">
+            <!-- /.col-lg-4 .col-sm-6 .col-xs-12 -->
+            <div class="col-lg-4 col-sm-6 col-xs-12 py_15">
+              <div class="items">
+                <div class="overlay">
+                  <div class="image-plus">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </div>
+                <!-- /.overlay -->
+              <img src="assets/img/submarine.png" alt="" class="img-rounded img-responsive">
               </div>
+              <!-- /.items -->
             </div>
+            <!-- /.col-lg-4 .col-sm-6 .col-xs-12 -->
           </div>
           <!-- /.row -->
         </div>
@@ -91,16 +148,23 @@
 
       </section>
       <!-- /#portfolio -->
-      <section id="about">
+      <section id="about" class="bg_jumbotron_about">
         <h2 class="text-center text-uppercase">about</h2>
-        <div class="container">
+        <div class="text-center py_15">
+          <span class="outer-line"></span>
+          <span aria-hidden="true">
+            <i class="fas fa-star"></i>
+          </span>
+          <span class="outer-line"></span>
+        </div>
+        <div class="container_sm">
           <div class="row">
             <div class="col-lg-6 col-sm-6 col-xs-12" >
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente officiis qui porro consectetur dolore ratione cumque deleniti in, quaerat cum omnis exercitationem voluptatibus possimus sed, sit! Quaerat, amet aliquid vitae?</p>
+              <p class="pl_50">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
             </div>
             <!-- /.col-lg-6 -->
             <div class="col-lg-6 col-sm-6 col-xs-12">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit perspiciatis recusandae vitae commodi et, quo, numquam similique odio blanditiis tempora totam eveniet quam, harum, eos inventore. Assumenda cumque laborum repellat.</p>
+              <p class="pr_50">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
             </div>
             <!-- /.col-lg-6 -->
           </div>
@@ -120,7 +184,14 @@
       <!-- /#about -->
       <section id="contact">
         <h2 class="text-center text-uppercase">contact me</h2>
-        <div class="container">
+        <div class="text-center py_15">
+          <span class="outer-line"></span>
+          <span aria-hidden="true">
+            <i class="fas fa-star"></i>
+          </span>
+          <span class="outer-line"></span>
+        </div>
+        <div class="container_sm container_xs container_md py_15">
           <div class="row">
             <div class="col-lg-12 col-sm-12 col-xs-12">
               <!-- form -->
@@ -140,7 +211,7 @@
                 <div class="form-group">
                   <label for="inputText3" class="col-sm-2 control-label">Phone Number</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputText3" placeholder="Phone Number">
+                    <input type="number" class="form-control" id="inputNumber3" placeholder="Phone Number">
                   </div>
                 </div>
                 <div class="form-group">
@@ -163,14 +234,13 @@
         <!-- /.container -->
       </section>
       <!-- /#contact -->
-
     </main>
     <!-- /#main_content -->
-    <footer id="site_footer">
-      <div class="container-fluid">
-        <div id="info" class="row text-center">
+    <footer id="site_footer" class="text-center bg_site_footer">
+      <div class="container">
+        <div class="row">
           <div class="col-lg-4 col-sm-4 col-xs-12">
-            <h5 class="text-uppercase">Location</h5>
+            <h4 class="text-uppercase py_15">Location</h4>
             <address>
               2215 John Daniel Drive Clarck, MO<br>
               54243<br>
@@ -178,27 +248,32 @@
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4 col-sm-4 col-xs-12">
-            <h5 class="text-uppercase">Around the web</h5>
-            <p>icone social</p>
+            <h4 class="text-uppercase py_15">Around the web</h4>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4 col-sm-4 col-xs-12">
-            <h5 class="text-uppercase">About freeelancer</h5>
+            <h4 class="text-uppercase py_15">About freeelancer</h4>
             <p>Freeelancer is a free to use, open source Boostrap theme created by
               <a href="#">Start Boostrap</a>.
             </p>
           </div>
           <!-- /.col-lg-4 -->
         </div>
-        <div id="copyright" class="row">
+      </div>
+      <!-- /.container -->
+      <div class="container-fluid bg_nav_copyright p_20">
+        <div class="row">
           <div class="col-ld-12 col-sm-12 col-xs-12">
-            <p class="small text-center text-capitalize">
-              copyright &copy; your websitw 2019
-            </p>
+            <p class="text-center text-capitalize py_20">copyright &copy; your website 2019</p>
           </div>
           <!-- /.col-ld-12 -->
         </div>
       </div>
+      <!-- /.container-fluid -->
     </footer>
     <!-- /#site_footer -->
   </body>

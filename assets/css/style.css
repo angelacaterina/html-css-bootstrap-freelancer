@@ -1,34 +1,131 @@
-/* body [class*="col-"] {
-  height: 200px;
-  background-color: pink;
-  border: 1px solid red;
-} */
+body{
+  padding-top: 90px;
+}
+/* color-text */
+#site_header,
+#about,
+#site_footer{
+  color:white;
+}
 /* utility */
+.container_sm{
+  max-width: 980px;
+  margin: auto;
+}
 
-/* nav bar */
-.navbar{
+.display_none{
+  display: none;
+}
+/* padding */
+.py_15{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.p_20{
+  padding: 20px;
+}
+.py_80_60{
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+/* background */
+.bg_nav_copyright{
   background-color: #2C3E50;
-  color: white;
+  border: 1px solid #2C3E50;
 }
-.header_menu a{
-  color: white;
-}
-
-.jumbotron, #about {
+.bg_jumbotron_about{
   background: #1ABC9C;
 }
+.bg_site_footer{
+  background: #3A546D;
+}
 
+/* btn about and contact me */
+.btn{
+  background: #1ABC9C;
+  border: 1px solid white;
+  color: white;
+}
+#contact .btn:hover{
+  background-color: #159a80;
+  border: 1px solid #159a80;
+  color:white;
+}
+/* divisore */
+span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.outer-line {
+  width: 15%;
+  border-bottom: 3px solid black;
+  border-radius: 6px;
+}
+.jumbotron .outer-line,
+#about .outer-line{
+  width: 15%;
+  border-bottom: 3px solid white;
+  border-radius: 6px;
+}
+/* #site_header */
+
+/* navbar */
+.navbar-default .navbar-toggle:hover {
+  background-color: #1ABC9C;
+}
+.navbar-default .navbar-header > a{
+  font-size: 2em;
+}
+.navbar-default .navbar-header > a,
+.navbar-default .navbar-nav > li >a{
+  color: white;
+}
+
+.navbar-default .navbar-header > a:hover{
+  color: white;
+}
+
+.navbar-default .navbar-nav > li >a:hover{
+  color: #1ABC9C;
+}
+
+/* .jumbotron */
+.jumbotron img{
+  height: 250px;
+}
+
+/* #main_content */
 /* portfolio */
 #portfolio{
   padding: 30px 0 80px;
 }
-#portfolio .card{
-  height: 200px;
-  background: black;
-  margin: 1rem;
+
+#portfolio .item{
+  height: auto;
+  /* display: inline-block; */
+  position: relative;
+  cursor: pointer;
 }
-#portfolio .row:nth-child(2){
-  padding-top: 3rem;
+
+.image-plus{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+}
+
+.overlay{
+  position: absolute;
+  background: #1ABC9C;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-radius: 6px;
+  opacity: 0;
+}
+.overlay:hover{
+  opacity: 0.9;
 }
 
 /*  about */
@@ -38,54 +135,89 @@
 #about p{
   padding: 30px 0;
 }
+#about .pl_50{
+  padding-left: 50px;
+}
+#about .pr_50{
+  padding-right: 50px;
+}
 
 /* contact */
 #contact{
   padding: 30px 0 80px;
 }
-
-.btn{
-  background: #1ABC9C;
-  border: 1px solid white;
-  color: white;
-}
+/* /#main_content */
 
 /* footer */
-#info{
-  background: #3A546D;
-  color:white;
-  padding: 40px;
-}
-
-#info a{
+#site_footer a{
   color: #1ABC9C;
 }
 
-#copyright{
-  padding: 20px 0;
-  background: #2C3E50;
-  color: white;
+#site_footer i{
+  width: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 10px;
+  margin: 0 5px;
 }
 
 /* extra small phone */
 @media screen and (max-width: 767px) {
-  #portfolio .card{
-    margin: 1rem auto;
+  .container_xs{
+    max-width: 70%;
+    margin: auto;
   }
-  #portfolio .row:nth-child(2){
-    padding-top: 1rem;
+  /* utility */
+  .py_15{
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
+  .py_80_60{
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  /* divisore */
+  .outer-line {
+    width: 20%;
+  }
+  .jumbotron .outer-line,
+  #about .outer-line{
+    width: 20%;
+  }
+  /* header */
+  .navbar-default .navbar-header > a{
+    font-size: 1em;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+  .jumbotron img{
+    height: 200px;
+  }
+  .jumbotron p{
+    font-size: 14.5px;
+  }
+
+  /* about */
   #about p{
-    padding: 30px 100px;
+    padding: 15px 0;
+  }
+  #about .pl_50{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  #about .pr_50{
+    padding-right: 70px;
+    padding-left: 70px;
   }
 }
 
 /* small tablet */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  #portfolio .card{
-    margin: 1rem auto;
-  }
-  #portfolio .row:nth-child(2){
-    padding-top: 1rem;
+  .container_md{
+    max-width: 80%;
+    margin: auto;
   }
 }
